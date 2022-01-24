@@ -1,0 +1,36 @@
+h1 {
+    font-size: 90px;
+}
+p {
+    margin: 35px 0px;
+    /* color: rgb(23, 48, 26); */
+    text-align: center;
+}
+.Bluepara{
+    color: blueviolet;
+}
+#intro{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#Orange{
+    color: orangered;
+}
+div{
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+    justify-content:space-evenly;
+}
+img{
+    width: 200px;
+    border: 2px solid grey;
+    padding: 10px;
+    margin: 9px;
+}
+h2{
+    border: 2px dotted green;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+
