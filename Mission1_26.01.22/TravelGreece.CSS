@@ -1,0 +1,78 @@
+.body{
+    background-color: honeydew;
+}
+h1{
+    font-size: 90px;
+    font-family: fantasy;
+    color: black;
+    text-align: center;
+}
+h2{
+    font-size: 35px;
+    font-family: fantasy;
+    color: black;
+}
+h3{
+    font-size: 30px;
+    font-family: fantasy;
+    color: black;
+}
+p{
+    color: rgb(36, 35, 35);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.font{
+    font-size: 20px;
+    font-family: fantasy;
+    color: black;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+img{
+    width: 330px;
+    border: 2px solid grey;
+    padding: 5px;
+    height: 200px;
+    
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+}
+
+.transition:hover{
+    animation-name: colorShift;
+    animation-duration: 4s;
+}
+
+@keyframes colorShift{
+    0%{
+        background: #006bbd;
+        left: 0px;
+        top: 0px;
+    }
+  25%{
+    background: #83ceec;
+    left: 200px;
+    top: 200px;
+  }
+  50%{
+    background: #006bbd;
+    left: 200px;
+    top: 200px;
+  }
+  75%{
+    background: #83ceec;
+    left: 200px;
+    top: 200px;
+  }
+  100%{
+    background: r#006bbd;
+    left: 200px;
+    top: 200px;
+  }
