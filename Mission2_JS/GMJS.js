@@ -7,7 +7,7 @@ function mOut ( obj){
     obj.innerHTML = "Get $250 off!!!";
 }
 
-//Get element by id
+//Get element by id - not sure if this worked
 
 function para(){
     document.getElementById("para").style.fontSize ="X-large";
