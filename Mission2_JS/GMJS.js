@@ -19,7 +19,7 @@ function myFunction() {
     let text;
     let person = prompt("Please enter your name:", "First & Last");
     if (person == null || person == "") {
-      text = "Hello! how can we help";
+      text = "Hello! how can we help ?";
     } else {
       text = "Welcome"+ " " + person + " " +"! How are you today?";
     }
