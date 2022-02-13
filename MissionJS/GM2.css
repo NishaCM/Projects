@@ -1,0 +1,90 @@
+.body{
+  background-color: rgb(246, 253, 252);
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: right;
+    margin: 50px 100px;
+}
+
+.button{
+    background-color: rgb(255, 255, 255);
+    margin: 2px 5px;
+    padding: 8px 15px;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.button:hover{
+    background-color: rgb(166, 213, 224);
+}
+
+.myFunction{
+    margin: 2px 5px;
+    padding: 8px 15px;
+    text-align: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+/* image scroll */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: content-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 50%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("img/pexels-jimmy-teoh-1010640.jpg")}
+  .img2 { background-image: url("img/pexels-josiah-lewis-772688.jpg");}
+  .img3 { background-image: url("img/pexels-pixabay-164041.jpg"); }
+  .img4 { background-image: url("img/pexels-pixabay-221433.jpg"); }
+  .img5 { background-image: url("img/pexels-josiah-lewis-770062.jpg"); }
+  .img6 { background-image: url("img/pexels-how-far-from-home-7026294.jpg"); }
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    border: 10px solid #f1f1f1;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* z-index: 2; */
+    width: 300px;
+    padding: 20px;
+    text-align:center;
+  }
+  
+
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+   
+
+
+
+
