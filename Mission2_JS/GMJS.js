@@ -21,7 +21,7 @@ function myFunction() {
     if (person == null || person == "") {
       text = "Hello! how can we help";
     } else {
-      text = "Welcome Back"+ " " + person + " " +"! How are you today?";
+      text = "Welcome"+ " " + person + " " +"! How are you today?";
     }
     document.getElementById("demo").innerHTML = text;
   }
