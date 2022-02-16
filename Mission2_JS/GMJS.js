@@ -10,7 +10,7 @@ function mOut ( obj){
 //Get element by id - not sure if this worked
 
 function para(){
-    document.getElementById("para").style.fontSize ="X-large";
+    document.getElementById("para").style.fontSize = "60px";
 };
 
 
