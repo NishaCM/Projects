@@ -19,30 +19,47 @@
 function fetchData() { 
 fetch('fetch.json')
 .then(res=> res.json())
-.then(json => console.log(json))
- console.log("fetchData button clicked");
+.then(jsonData => console.log(jsonData))
+ console.log("jsonData");
 }
  
  function showData() { 
     fetch('fetch.json')
     .then(res=> res.json())
-    .then(json => {
-        const showDataDiv = document.getElementById('showData')
-        showDataDiv.innerHTML = ' ',
+    .then(jsonData => {
+        const showDataDivElement = document.getElementById('showData')
+        showDataDivElement.innerHTML = ' ',
 
-        jsonData.forEach((person) => {showDataDivElement.innerHTML = showDataDivElement.innerHTML + `<li> ${person} </li>`;
+        jsonData.forEach((person) => {
+            showDataDivElement.innerHTML += `<li> ${person.name}, ${person.age} </li>`;
         });
 
+    });
+}
 
+//external API file
 
-    })
-     
-    
-    console.log("showData button clicked");}
+function showAPIData() { ; 
+ fetch("https://pokeapi.co/api/v2/pokemon")    
+ .then((res) => res.json())    
+ .then((jsonData) => {    
+     console.log(jsonData);      
+     const showDataDivElement = document.getElementById('showData');         showDataDivElement.innerHTML = '';  
+     jsonData.results.forEach(user => {
+         showDataDivElement.innerHTML += `
+         <div>${user.name} </div>
+         `
+     }
+        
+        )
 
+});}
+
+      
 
 
 // example on array
 // const arrayOfObjects = [ { "name": "john", "age": 27 }, { "name": "Mary", "age": 22 }, { "name": "Ethan", "age": 17 }, { "name": "Joe", "age": 53 }, { "name": "Amelia", "age": 87 }, { "name": "Adam", "age": 34 } ]// Each element in this array is by itself an object 
 
 // arrayOfObjects.forEach(obj => console.log(obj.name.toUpperCase()))
+
